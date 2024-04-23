@@ -7,7 +7,7 @@ int main() {
 
 	if (image->imageSizeIsValid()) {
 		ImageBrightener brightener(image);
-		int attenuatedCount = brightener.BrightenWholeImage();
+		const int attenuatedCount = brightener.BrightenWholeImage();
 		std::cout << "Attenuated " << attenuatedCount << " pixels\n";
 		return 0;
 	}
